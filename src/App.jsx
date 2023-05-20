@@ -34,8 +34,6 @@ const [contador, setContador] = useState(0)
             setContador={setContador}
             contador={contador}
             key={indice}
-            texto={texto}
-            setTexto={setTexto}
         />)}
       </SCContainerCard>
       <Footer data-test="footer" contador={contador} totalCards={cards.length}/>

@@ -55,6 +55,7 @@ table {
 
 body {
     background-color: #FB6B6B;
+    font-family: 'Recursive', sans-serif;
 }
 button{
     border: none;

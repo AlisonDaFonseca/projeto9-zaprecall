@@ -13,6 +13,8 @@ const SCLogo = styled.div`
     width: 299px;
     margin: 50px auto;
     padding: 0 30px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
 
     display: flex;
     justify-content: space-around;

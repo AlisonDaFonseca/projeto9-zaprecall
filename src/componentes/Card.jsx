@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 
 
-export default function Card({ indice, contador, setContador, pergunta, resposta, texto, setTexto }) {
+export default function Card({ indice, contador, setContador, pergunta, resposta}) {
 
 
     const [nivelCard, setNivelCard] = useState('selecionar-card');
@@ -146,6 +146,7 @@ const SCCardResposta = styled.div`
     }
     span {
     font-size: 18px;
+    font-weight: 400;
     padding: 15px;
     }
 `;
