@@ -107,7 +107,7 @@ const SCSelecionarPergunta = styled.div`
 const SCCardPergunta = styled.div`
     width: 300px;
     min-height: 131px;
-    background-color: #FFFFFF;
+    background-color: #FFFFD4;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     position: relative;
@@ -125,7 +125,7 @@ const SCCardPergunta = styled.div`
 const SCCardResposta = styled.div`
     width: 300px;
     min-height: 131px;
-    background-color: #FFFFFF;
+    background-color: #FFFFD4;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     position: relative;

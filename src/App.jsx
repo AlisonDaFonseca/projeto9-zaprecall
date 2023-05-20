@@ -22,7 +22,6 @@ const cards = [
 export default function App() {
   
 const [contador, setContador] = useState(0)
-const [texto, setTexto] = useState('none');
 
   return (
     <SCContainer>
@@ -39,7 +38,7 @@ const [texto, setTexto] = useState('none');
             setTexto={setTexto}
         />)}
       </SCContainerCard>
-      <Footer contador={contador} totalCards={cards.length}/>
+      <Footer data-test="footer" contador={contador} totalCards={cards.length}/>
     </SCContainer>
   )
 }
