@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FB6B6B;
+}
+button{
+    border: none;
+}
+
+
+
+
+
+h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+
+
+.resposta button {
+    border-radius: 5px;
+    height: 37px;
+    width: 85px;
+    left: 400px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    margin: 5px;
+}
+
+
+.txt-nao-lembrei{
+    color: #FF3030;
+    text-decoration: line-through;
+}
+.txt-quase-nao-lembrei{
+    color: #FF922E;
+    text-decoration: line-through;
+}
+.txt-lembrei{
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
