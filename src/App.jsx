@@ -99,7 +99,7 @@ const SCContainerCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
     
     position: relative;
 `;
