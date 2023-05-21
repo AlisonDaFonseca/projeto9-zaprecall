@@ -7,16 +7,25 @@ import certo from "../assets/icone_certo.png"
 import styled from 'styled-components'
 
 
+const novaArray = [];
 
-export default function Card({ indice, contador, setContador, pergunta, resposta}) {
+export default function Card({ indice, contador, setContador, pergunta, resposta, setArrayIcones, temErro, setTemErro }) {
 
-
+    
     const [nivelCard, setNivelCard] = useState('selecionar-card');
     const [iconePergunta, setIconePergunta] = useState(setaPlay);
     const [desabilita, setDesabilita] = useState(false);
     const [textoRiscado, setTextoRiscado] = useState(false);
     
-
+    function addIcone(icone){
+        novaArray.push(icone);
+        setArrayIcones(novaArray);
+        if(icone == erro){
+            if(temErro === false){
+                setTemErro(true);
+            }
+        }
+    }
 
 
     function escolheBotao() {
@@ -52,18 +61,21 @@ export default function Card({ indice, contador, setContador, pergunta, resposta
                                 escolheBotao();
                                 setTextoRiscado(true);
                                 setIconePergunta(erro);
+                                addIcone(erro);
                             }}>Não lembrei</SCBotaoNaoLembrei>
                         <SCBotaoQuaseNaoLembrei data-test="partial-btn"
                             onClick={() => {
                                 escolheBotao();
                                 setTextoRiscado(true);
                                 setIconePergunta(quase);
+                                addIcone(quase);
                             }}>Quase não lembrei</SCBotaoQuaseNaoLembrei>
                         <SCBotaoLembrei data-test="zap-btn"
                             onClick={() => {
                                 escolheBotao();
                                 setTextoRiscado(true);
                                 setIconePergunta(certo);
+                                addIcone(certo);
                             }}>Lembrei</SCBotaoLembrei>
                     </SCBotao>
                 </SCCardResposta>
