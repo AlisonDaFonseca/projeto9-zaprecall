@@ -31,9 +31,7 @@ export default function Footer({ temErro, contador, totalCards, arrayIcones}) {
 
             <span>{contador}/{totalCards} CONCLUÍDOS</span>
             <SCIcones>
-                {arrayIcones.map((icone, indice) => {
-                <img key={indice} data-test={icone === '/src/assets/icone_erro.png' ? 'no-icon' : icone === '/src/assets/icone_quase.png' ? 'partial-icon' : 'zap-icon'} src={icone} />
-                })}
+                {arrayIcones.map((icone, indice) => <img key={indice} src={icone} data-test={icone === '/src/assets/icone_erro.png' ? 'no-icon' : icone === '/src/assets/icone_quase.png' ? 'partial-icon' : 'zap-icon'}/>)}
             </SCIcones>
         </SCFooter>
     );
